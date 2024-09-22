@@ -1,0 +1,281 @@
+
+
+*{
+  font-family: "Gowun Batang", serif;
+  font-weight: 400;
+}
+
+.slider-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.data{
+  display: flex;
+}
+
+.carousel-slide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.carousel-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.carousel-text h1 {
+  font-size: 80px;
+  color: orangered;
+  width: 100%;
+  letter-spacing: 5px;
+  line-height: 80px;
+  align-items: center;
+}
+
+.carousel-text p {
+  margin-top: 20px;
+  line-height: 35px;
+  font-size: 25px;
+  text-align: justify;
+}
+
+.carousel-image {
+  flex: 1;
+  /* display: flex; */
+}
+
+.carousel-image img {
+  width: 100%;
+  height: 100%;
+  height: auto;
+  border-radius: 8px;
+  mix-blend-mode: multiply;
+}
+
+.butts{
+  width: 100%;
+  margin-top: 30px;
+}
+.butts button{
+  width: 50%;
+  padding: 10px 0;
+  
+  color: rgb(183, 99, 204);
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+}
+.butts button:hover{
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+  outline: none;
+}
+/* Service.css */
+.product {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+.input-group-text {
+  /* background-color: blue; */
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-control {
+  border-radius: 4px;
+
+}
+
+
+@media (max-width: 576px) {
+  .product {
+    max-width: 100%;
+  }
+}
+
+
+.fetch {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+}
+
+.apna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid #ccc; */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.apna img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.company {
+  color: #333;
+}
+
+.price {
+  color: #e74c3c;
+}
+/* Service.css */
+
+.api {
+  padding: 20px; /* Overall padding for the container */
+}
+
+.fetch {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 20px; /* Space between items */
+}
+
+.apna {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.apna:hover {
+  transform: scale(1.05); /* Slightly enlarge the item on hover */
+}
+
+.apna img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the space */
+}
+
+.product-info {
+  margin-top: 10px;
+}
+
+.company {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.price {
+  color: #e74c3c;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .fetch {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .fetch {
+    grid-template-columns: 1fr; /* 1 item per row for small screens */
+  }
+}
+
+
+@media (max-width:1024px) {
+  .carousel-text h1 {
+    font-size: 50px;
+    width: 100%;
+    line-height: 50px;
+    letter-spacing: 3px;
+  }
+
+}
+@media (max-width: 900px) {
+  .slider-container {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .carousel-text h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .carousel-text p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-slide {
+    flex-direction: column-reverse;
+  
+  }
+
+  .carousel-text h1 {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+
+  .carousel-text p {
+    font-size: 20px;
+    margin: 0;
+    list-style: 2px;
+    }
+
+  .carousel-image img {
+    width: 100%;
+    height: 400px;
+    /* height: auto; */
+  }
+  .fetch{
+    flex-direction: column;
+    
+  }
+  .apna img{
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-text h1 {
+    font-size: 30px;
+  }
+
+  .carousel-text p {
+    font-size: 14px;
+  }
+
+  .butts button {
+    width: 120px;
+    font-size: 16px;
+  }
+
+  .apna {
+    padding: 15px;
+  }
+
+  .product-info {
+    font-size: 16px;
+  }
+}

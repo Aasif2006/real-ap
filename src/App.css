@@ -1,0 +1,532 @@
+*{
+  margin: 0;
+  padding: 0 ;
+  box-sizing: border-box;
+  font-family: "Poiret One", sans-serif;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+
+.navbar .nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3vw 0vw;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  height: 10vh;
+  padding: 0 8vw;
+  
+  border-radius: 5px;
+  width: 100%;
+}
+
+
+.logo h2{
+  font-size: 40px;
+  font-weight: 400;
+  color: orangered;
+  cursor: pointer;
+
+  
+}
+
+.navbar .nav-link{
+  font-size: 15px;
+  display: flex;
+  gap: 2vw;
+  position: relative;
+  align-items: center;
+
+}
+.nav-link a{
+  text-decoration: none;
+  align-items: center;
+  color: aqua ;
+;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 5px;
+
+  position: relative;
+}
+
+ .nav-link a::after{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  background-color: orangered;
+bottom: -10px;
+transition: 0.3s ease-in-out;
+}
+
+  .nav-link a:hover::after{
+  width: 100%;
+}
+.nav-link a:hover{
+  color: orangered;
+  
+
+  
+}
+.butt {
+  position: relative;
+}
+.butt button{
+  width: 100%;
+  padding: 8px 25px;
+  height: 100%;
+
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 400;
+  border: 1px solid black;
+  transition: all 0.3s ease-out   ;
+  position: relative;
+  z-index: 1;
+overflow: hidden;
+cursor: pointer;
+}
+.butt button::before{
+  content: "";
+  position: absolute;
+  background-color: orangered;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  z-index: -1;
+  
+  transition: all 0.4s ease-in  ;
+  overflow: hidden  ;
+
+}
+.butt button:hover::before{
+  
+  width: 100%;
+
+}
+
+.butt button:hover{
+
+  color: white;
+}
+
+.nav-link2 ,.butt2{
+  display: none;
+}
+
+.menu li{
+  list-style: none;
+} 
+/* second */
+
+
+
+
+
+
+ 
+.container{
+ padding: 0 8vw; 
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+margin-top: 5rem;
+}
+.container.h1 {
+  font-size: 9vw;
+  color: #8bf;
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  
+}
+.files img{
+  border-radius: 10px;
+}
+
+ 
+.card{
+  padding-right: 10px;
+}
+.card {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+.datass {
+  display: flex;
+  /* flex-direction: column;  */
+  margin-top: 20px; /* Adjust margin for better spacing */
+  align-items: center; /* Center align contents */
+}
+
+.player-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align the player */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px; /* Limit max width for larger screens */
+}
+
+.player {
+  text-align: center;
+  width: 100%;
+  background-color: #9545a0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.album-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  color: #61dafb;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.time-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .player-container {
+    flex-direction: column; /* Stack elements on smaller screens */
+    padding: 10px; /* Reduce padding */
+  }
+  .datass{
+    flex-direction: column;
+  }
+
+  .controls button {
+    font-size: 1.5rem; /* Smaller buttons */
+  }
+}
+
+@media (max-width:952px) {
+  .navbar{
+    width: 100%;
+  }
+  .navbar .nav{
+    width: 100%;
+    padding: 0 2vw;
+  }
+  .logo h2{
+    font-size: 23px;
+    align-items: center;
+  }
+  .butt button{
+    padding: 8px 20px ;
+    font-size: 15px;
+  }
+}
+.menu{
+  display: none;
+  font-size: 25px;
+
+}
+
+
+@media (max-width:840px){
+  .navbar{
+    width: 100%;
+    padding: 0 2vw;
+  }
+  .navbar2 .nav2{
+    box-shadow: rgba(30, 158, 197, 0.56) 0px 22px 70px 4px;  padding-bottom:15px ;
+    /* color: orangered; */
+    
+    width: 100%;
+  }
+
+  .nav-link2{
+    font-size: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+  
+    position: relative;
+    align-items: center;
+  
+  
+  }
+   .nav-link2 a{
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+  position: relative;
+    color: orangered ;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+  
+  .nav-link2 a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    background-color: orangered;
+  bottom: -10px;
+  transition: 0.3s ease-in-out;
+  }
+  
+  .nav-link2 a:hover::after{
+    width: 100%;
+  }
+  .nav-link2 a:hover{
+    color: orangered;
+    
+  
+    
+  }
+  .butt2 {
+  text-align: center;
+  margin-top: 20px;
+    display: block;
+  }
+
+  
+  .butt2 button{
+    width: 15vw;
+    padding: px 0px;
+    
+    
+  
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    border: 1px solid black;
+    transition: all 0.3s ease-out   ;
+    position: relative;
+    z-index: 1;
+  overflow: hidden;
+  cursor: pointer;
+  }
+  .butt2 button::before{
+    content: "";
+    position: absolute;
+    background-color: orangered;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    
+    transition: all 0.4s ease-in  ;
+    overflow: hidden  ;
+  
+  }
+  .butt2 button:hover::before{
+    
+    width: 100%;
+  
+  }
+  
+  .butt2 button:hover{
+  
+    color: white;
+  }
+  
+  
+  
+  .navbar .nav-link , .butt{
+  display: none;
+  
+  }
+  .logo h2{
+    font-size: 30px;
+  }
+  .menu{
+    display: block;
+    margin-left: 280px;
+  }
+  .container h1{
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  
+  
+  
+  
+  
+}
+@media (max-width:768px) {
+  
+}
+
+@media (max-width:497px) {
+  .menu{
+    margin: 2vw 0;
+    font-size: 20px;
+  }
+  .container h1{
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .butt2{
+    width: 100%;
+  }
+  .butt2 button{
+    width: 25%;
+  }
+  
+}
+
+ 
+
+
+   .menu li{
+    list-style: none;
+  }
+  
+  
+  .container{
+   padding-left: 8vw; 
+   width: 100%;
+  margin-top: 5rem;
+  }
+  .container.h1 {
+    font-size: 9vw;
+    color: #8bf;
+    text-align: left;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    
+  }
+  
+  
+  
+  
+  @media (max-width:1222px) {
+    .navbar{
+      width: 100%;
+    }
+    .navbar .nav{
+      width: 100%;
+      padding: 0 2vw;
+    }
+    .logo h2{
+      font-size: 23px;
+      align-items: center;
+    }
+    .butt button{
+      padding: 8px 20px ;
+      font-size: 15px;
+    }
+  }
+  .menu{
+    display: none;
+    font-size: 25px;
+  
+  }
+  
+  @media (max-width:768px){
+    .navbar{
+      width: 100%;
+      padding: 0 5vw;
+    }
+
+    .logo h2{
+      font-size:28px; 
+    }
+    .navbar .nav-link , .butt{
+    /* display: none; */
+    position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #ef2828;
+      flex-direction: column;
+      align-items: center;
+      height: 0;
+      overflow: hidden;
+      transition: height 0.3s ease;
+    }
+    .logo h2{
+      font-size: 30px;
+    }
+    .menu{
+      display: block;
+    }
+    .container h1{
+      font-size: 30px;
+      font-weight: 400;
+    }
+  
+  }
+  
+  @media (max-width:588px) {
+    .menu{
+      margin: 2vw 0;
+      font-size: 20px;
+    }
+    .container h1{
+      font-size: 22px;
+      font-weight: 400;
+    }
+    .logo h2{
+      font-size:20px ;
+    }
+  }
+  
+
+  @media (max-width:700px) {
+    .menu{
+      /* margin: 2vw 0; */
+      font-size: 20px;
+    }
+    .container h1{
+      font-size: 22px;
+      font-weight: 400;
+    }
+    .logo h2{
+      font-size:20px ;
+    }
+  }
+  
+  
+  @media (max-width:840px) {
+    .menu{
+      display: block;
+    }
+  }
+  
