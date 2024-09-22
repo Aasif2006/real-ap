@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import Card from './Card';
-import Flip from './Flip';
+// import Flip from './Flip';
 
 
 
@@ -33,7 +33,7 @@ function Home() {
      
 </div>
 <Card/>
-<Flip/>
+{/* <Flip/> */}
 
     </>
   );

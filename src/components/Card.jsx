@@ -105,7 +105,7 @@ function App() {
   return (
     <div className="datass">
       <div className="player-container">
-      <div className="player">
+      <div className="player  ">
         <img
           src={musicList[currentTrack].cover}
           alt="album cover"
@@ -144,7 +144,7 @@ function App() {
       </div>
     </div>
       <NewMusicPlayer />
-      <NewMusicPlayers/> {/* Use the NewMusicPlayer component */}
+      <NewMusicPlayers/> 
     </div>
   );
 }
